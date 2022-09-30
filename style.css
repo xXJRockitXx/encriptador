@@ -1,0 +1,112 @@
+/* 
+Para la recursividad: 
+vamos a dividir en dos columnas toda la pagina
+*/
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.col-1 {
+    width: 50%;
+}
+
+.col-2 {
+    width: 50%;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Diseño */
+.icono {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    /* background-color: #110670; */
+    background-color: #1B2631;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+/* Primer columna */
+.texto {
+    width: 100%;
+    background-color: #34495E ;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.btnEncriptar {
+    border-radius: 10px;
+    background-color: #AAB7B8 ;
+    margin: 20px;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.btnEncriptar:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.btnDesencriptar {
+    border-radius: 10px;
+    background-color: #CACFD2 ;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.btnDesencriptar:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: 300ms;
+}
+
+/* Segunda columna */
+.resultado {
+    display: inline;
+    width: 100%;
+    background-color: #34495E;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.btnCopiar {
+    border-radius: 10px;
+    background-color: #616A6B;
+    margin: 20px 0 20px 0;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.btnCopiar:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px;
+    text-align: center;
+    margin: 50px 0 0 0;
+}
+
+/* Media Querys */
