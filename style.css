@@ -1,6 +1,5 @@
 /* 
-Para la recursividad: 
-vamos a dividir en dos columnas toda la pagina
+Para la recursividad: vamos a dividir en dos columnas toda la pagina
 */
 * {
     box-sizing: border-box;
@@ -25,61 +24,26 @@ vamos a dividir en dos columnas toda la pagina
     width: 100%;
 }
 
-/* Media Query para 760px */
-/* Dividimos la pantalla en 2 columnas */
-@media screen and (min-width: 760px) {
-    * {
-        font-size: 22px;
-    }
-
-    .col-1 {
-        width: 50%;
-    }
-
-    .col-2 {
-        width: 100%;
-    }
-}
-
-/* Media Query para dispositivos mas pequeños */
-@media screen and (max-width: 600px) {
-    * {
-        font-size: 20px;
-    }
-
-    .btn-encriptar {
-        border-radius: 10px;
-        background-color: #E94560;
-        border: none;
-        margin-right: 15px;
-        margin-bottom: 15px;
-    }
-}
-
-/* Media Query para dispositivos mas grandes */
-@media screen and (min-width: 1200px) {
-    * {
-        font-size: 30px;
-    }
-
-    .copyright {
-        color: #FFFFFF;
-        font-size: 50px;
-        text-align: center;
-        margin: 0 0 30px;
-    }
-}
-
 /* Diseño */
+html {
+    background-color: #16213E;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+header {
+    text-align: center;
+    font-size: 50px;
+}
+
 .icono {
     max-width: 100%;
     height: auto;
+    float: left;
 }
 
-body {
-    background-color: #16213E;
-    /* background: linear-gradient(#2E4053, #283747); */
-    /* font-family: 'Roboto Condensed', sans-serif; */
+h1 {
+    margin: 25px 0;
+    display: inline-block;
 }
 
 /* Primer columna */
@@ -158,4 +122,58 @@ body {
     font-size: 15px;
     text-align: center;
     margin: 0 0 30px;
+}
+
+/* Media Query para 760px */
+/* Dividimos la pantalla en 2 columnas */
+@media screen and (min-width: 760px) {
+    * {
+        font-size: 22px;
+    }
+
+    .col-1 {
+        width: 50%;
+    }
+
+    .col-2 {
+        width: 100%;
+    }
+}
+
+/* Media Query para dispositivos mas pequeños */
+@media screen and (max-width: 600px) {
+    * {
+        font-size: 20px;
+    }
+
+    header {
+        text-align: center;
+        font-size: 35px;
+    }
+
+    h1 {
+        margin: 25px auto;
+    }
+
+    .btn-encriptar {
+        border-radius: 10px;
+        background-color: #E94560;
+        border: none;
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+/* Media Query para dispositivos mas grandes */
+@media screen and (min-width: 1200px) {
+    * {
+        font-size: 30px;
+    }
+
+    .copyright {
+        color: #FFFFFF;
+        font-size: 18px;
+        text-align: center;
+        margin: 0 0 30px;
+    }
 }
