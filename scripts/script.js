@@ -5,7 +5,6 @@ var btnDesencriptar = document.querySelector(".btn-desencriptar");
 var btnCopiar = document.querySelector(".btn-copiar");
 
 var resultado = document.querySelector(".resultado");
-resultado.disabled = true;
 
 btnEncriptar.onclick = function () {
     /* Este es el boton que realizará la encriptación del texto */
