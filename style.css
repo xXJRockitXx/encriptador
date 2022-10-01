@@ -25,7 +25,7 @@ vamos a dividir en dos columnas toda la pagina
     width: 100%;
 }
 
-/* Media Queri para 760px */
+/* Media Query para 760px */
 /* Dividimos la pantalla en 2 columnas */
 @media screen and (min-width: 760px) {
     * {
@@ -41,7 +41,7 @@ vamos a dividir en dos columnas toda la pagina
     }
 }
 
-/* Media Queri para dispositivos mas pequeños */
+/* Media Query para dispositivos mas pequeños */
 @media screen and (max-width: 600px) {
     * {
         font-size: 20px;
@@ -53,6 +53,20 @@ vamos a dividir en dos columnas toda la pagina
         border: none;
         margin-right: 15px;
         margin-bottom: 15px;
+    }
+}
+
+/* Media Query para dispositivos mas grandes */
+@media screen and (min-width: 1200px) {
+    * {
+        font-size: 30px;
+    }
+
+    .copyright {
+        color: #FFFFFF;
+        font-size: 50px;
+        text-align: center;
+        margin: 0 0 30px;
     }
 }
 
